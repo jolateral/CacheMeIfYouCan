@@ -24,7 +24,7 @@ export default function SignUp() {
     setLoading(true);
     try {
       await signup(email, password);
-      router.push('/dashboard');
+      router.push('/recipes');
     } catch (error) {
       setError('Failed to create an account');
       console.error(error);
