@@ -49,14 +49,27 @@ export default function Home() {
           and our AI creates healthy, delicious meals tailored to your
           diet. Waste less, eat better!
         </p>
-        <div className="relative h-48">
+        {/* <div className="relative h-48">
           <img
-            src="/vegetables.jpg" 
+            src="/vegetables.png" 
             alt="Fresh vegetables"
             fill
             className="object-cover rounded-lg"
           />
+        </div> */}
+        <div className="relative">
+          <img
+            src="/vegetables.png"
+            alt="Fresh vegetables"
+            //style={{ width: "100%", height: "100px", borderRadius: "8px" }}
+          />
         </div>
+
+        
+
+        
+
+
       </div>
 
       {/* Right Column - Sign In Form */}
@@ -117,7 +130,7 @@ export default function Home() {
             onClick={handleGoogleSignIn}
             className="w-full bg-white text-gray-700 py-3 rounded-lg border border-gray-300 hover:bg-gray-50 flex items-center justify-center gap-2"
           >
-            <img src="/google-icon.svg" alt="Google" className="w-5 h-5" />
+            <img src="/google-icon.png" alt="Google" className="w-5 h-5" />
             Sign in with Google
           </button>
         </form>
